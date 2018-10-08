@@ -30,7 +30,6 @@ def send_mail(content):
     to_addr = os.environ['TO_EMAIL_ADDR']
     smtp_server = os.environ['SMTP_SERVER']
 
-
     msg = MIMEText(content, 'plain', 'utf-8')
     msg['From'] = from_addr
     msg['To'] = to_addr
